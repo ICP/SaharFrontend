@@ -32,7 +32,7 @@
     & > .container { height: @navbar-height; }
 }
 #menu {
-    margin-top: 26px;
+    margin-top: 26px; position: relative;
     ul { 
         margin: 0;
         li { 
@@ -72,7 +72,7 @@
                     .child { display: block; }
                 }
                 .child {
-                    display: none; position: absolute; left: 0; top: 49px; width: 500px; background: #222; z-index: 600; padding: 30px 50px 30px 10px;
+                    display: none; position: absolute; left: 0; top: 49px; width: 580px; background: #222; z-index: 600; padding: 30px 50px 30px 10px;
                     ul {
                         li {
                             & ~ li { margin: 0; }
@@ -108,4 +108,7 @@
         display: block; width: 20px; height: 20px; text-align: center; line-height: 20px; font-size: 18px; position: absolute; top: 10px; right: 10px; color: #fff; background: rgba(0, 0, 0, 0.9); text-decoration: none;
         &:hover { background: #000; }
     }
+}
+#menu-toggle {
+    position: relative; z-index: 800;  
 }

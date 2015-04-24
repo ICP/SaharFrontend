@@ -1,5 +1,6 @@
 $(function() {
     // Init
+    Periodicals.init();
     Tooltip.init(); // Initializing Tooltip
     Ticker.init(); // Ticker initiation
     Item.init(); // item methods initialization
@@ -14,6 +15,7 @@ $(function() {
     Frequencies.init();
     Comments.init();
     Search.init();
+    Select.init();
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
@@ -48,9 +50,60 @@ $(function() {
             e.preventDefault();
         });
     }
+    $("#menu-toggle").click(function (e) {
+        if ($("body").hasClass("_xs") || $("body").hasClass("_sm")) {
+            if ($("#menu ul").is(':visible')) {
+                $("#menu ul").slideUp();
+            } else {
+                $("#menu ul").slideDown();
+            }
+            e.preventDefault();
+        }
+    });
+    $("#menu .haschild > a").on('click', function (e) {
+        if ($("body").hasClass("_xs") || $("body").hasClass("_sm")) {
+            var $child = $(this).parent().find(".child");
+            if ($child.is(':visible')) {
+                $child.slideUp();
+            } else {
+                $child.slideDown();
+            }
+            e.preventDefault();
+        }
+    });
+    responsive_resize();
 });
-
+$(window).resize(function () { // Change width value on user resize, after DOM
+    responsive_resize();
+});
+function responsive_resize() {
+    var current_width = $(window).width();
+    if (current_width < 768) {
+        $('body').addClass("_xs").removeClass("_sm").removeClass("_md").removeClass("_lg"); // XS
+    } else if (current_width > 767 && current_width < 992) {
+        $('body').addClass("_sm").removeClass("_xs").removeClass("_md").removeClass("_lg"); // SM
+    } else if (current_width > 991 && current_width < 1200) {
+        $('body').addClass("_md").removeClass("_xs").removeClass("_sm").removeClass("_lg"); // MD
+    } else if (current_width > 1199) {
+        $('body').addClass("_lg").removeClass("_xs").removeClass("_sm").removeClass("_md"); // LG
+    }
+}
 // Objects
+var Periodicals = {
+    init: function () {
+        if (window.location.hostname.indexOf('localhost') === -1) {
+            Periodicals.reload();
+        }
+    }
+    , reload: function () {
+        // Reload homepage
+        setInterval(function () {
+            var pathname = window.location.pathname;
+            if (pathname == "/")
+                location.reload();
+        }, 120000);
+    }
+}
 var Search = {
     init: function () {
         var $item = $("#menu li.search");
@@ -216,6 +269,66 @@ var Comments = {
         e.preventDefault();
     }
 }
+var Select = {
+    init: function () {
+        $("[data-type=select]").select();
+        Select.initWeatherSelect();
+    }
+    , initWeatherSelect: function() {
+        $(document).on('change', "#weather [data-type=select]", function () {
+            var i = parseInt($(this).find("option:selected").val());
+            var $wo = $("#weather > .inner > div");
+            var wi = $(this).find("option:selected").index();
+            $wo.not(".choose-location").fadeOut().addClass("hide");
+            $wo.eq(wi).removeClass('hide').fadeIn();
+        }).on('focusout', $("#weather > .inner > div .choose-location"), function () {
+            //alert();
+        })
+    }
+}
+$.fn.select = function (options) {
+    return this.each(function () {
+        var $select = $(this);
+        var o = { attribs: { id: $(this).attr("id"), name: $(this).attr("name"), placeholder: $(this).attr("data-placeholder") } };
+        var items = '';
+        var selectTmpl = '<div class="select-box" data-id="#{id}" data-name="{name}"><a class="select-handler" data-bind="#{id}">{placeholder}</a><ul class="items" style="display: none;">{items}</ul></div>';
+        var selectsOptionTmpl = '<li data-val="{val}"><a href="#">{title}</a></li>';
+        $.each($select.find("option"), function (i, item) {
+            items += selectsOptionTmpl.replace(/{val}/g, $(this).attr('value')).replace(/{title}/g, $(this).text());
+        });
+        var $html = selectTmpl.replace(/{id}/g, o.attribs.id).replace(/{name}/g, o.attribs.name).replace(/{items}/g, items).replace(/{placeholder}/g, o.attribs.placeholder);
+        if ($select.children().length) {
+            $select.before($html);
+            $select.css({ 'display': 'none' });
+
+            $(document).on('click', ".select-handler", function (e) {
+                var $list = $(this).parent().find("ul");
+                if (!$list.hasClass("open")) {
+                    $list.addClass('open').show();
+                } else {
+                    $list.removeClass('open').hide();
+                }
+                e.preventDefault();
+            }).mouseup(function (e) {
+                var $list = $("#weather > .inner > .choose-location");
+                if (!$list.is(e.target) // if the target of the click isn't the container...
+                    && $list.has(e.target).length === 0) // ... nor a descendant of the container
+                {
+                    var $list = $list.find("ul");
+                    if ($list.hasClass('open')) {
+                        $list.removeClass('open').hide();
+                    }
+                }
+            });
+            $(document).on('click', ".select-box .items a", function (e) {
+                var $val = $(this).parent().attr('data-val');
+                var $select = $(this).parents(".select-box").parent().find("select:first");
+                $select.val($val).change();
+                e.preventDefault();
+            });
+        }
+    });
+};
 var Live = {
     init: function () {
         /*
@@ -402,9 +515,11 @@ var Itemlist = {
         });
         if ($("#itemlist").length) {
             $(window).scroll(function () {
-                if (parseInt($("#itemlist").attr('data-tries')) < 5) {
-                    if ($(window).scrollTop() >= $(document).height() - $(window).height() - 100) {
-                        Itemlist.prepareLoad();
+                if (!$("body").hasClass("_xs") && !$("body").hasClass("_sm")) {
+                    if (parseInt($("#itemlist").attr('data-tries')) < 5) {
+                        if ($(window).scrollTop() >= $(document).height() - $(window).height() - 100) {
+                            Itemlist.prepareLoad();
+                        }
                     }
                 }
             });

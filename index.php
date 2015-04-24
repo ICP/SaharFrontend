@@ -13,7 +13,7 @@
             <div class="wrapper">
                 <div class="container">
                     <div class="row">
-                        <section id="mainbody" class="col-xs-12 col-md-9">
+                        <section id="mainbody" class="col-xs-12 col-md-8">
                             <?php include dirname(__FILE__) . '/blocks/modules/showcase.php' ?><!-- ./showcase -->
                             <?php include dirname(__FILE__) . '/blocks/modules/programs.php' ?><!-- ./programs -->
                             <?php include dirname(__FILE__) . '/blocks/modules/news-digest.php' ?><!-- ./news-digest -->
@@ -21,7 +21,7 @@
                             <?php include dirname(__FILE__) . '/blocks/modules/media.php' ?><!-- ./media -->
                             <?php include dirname(__FILE__) . '/blocks/modules/utility.php' ?><!-- ./utility -->
                         </section>
-                        <aside id="sidebar" class="col-xs-12 col-md-3">
+                        <aside id="sidebar" class="col-xs-12 col-md-4">
                             <?php include dirname(__FILE__) . '/blocks/modules/sidebar/latest.php' ?><!-- ./latest -->
                             <?php include dirname(__FILE__) . '/blocks/modules/sidebar/bulletin.php' ?><!-- ./bulletin -->
                             <?php include dirname(__FILE__) . '/blocks/modules/sidebar/sharings.php' ?><!-- ./sharings -->

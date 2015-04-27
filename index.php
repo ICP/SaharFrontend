@@ -16,8 +16,6 @@
                             <?php include dirname(__FILE__) . '/blocks/modules/showcase.php' ?><!-- ./showcase -->
                             <?php include dirname(__FILE__) . '/blocks/modules/programs.php' ?><!-- ./programs -->
                             <?php include dirname(__FILE__) . '/blocks/modules/news-digest.php' ?><!-- ./news-digest -->
-                            <?php // include dirname(__FILE__) . '/blocks/modules/news-lists.php' ?><!-- ./news-lists -->
-                            <?php include dirname(__FILE__) . '/blocks/modules/media.php' ?><!-- ./media -->
                             <?php include dirname(__FILE__) . '/blocks/modules/utility.php' ?><!-- ./utility -->
                         </section>
                         <aside id="sidebar" class="col-xs-12 col-md-4">

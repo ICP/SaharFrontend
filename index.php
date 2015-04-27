@@ -28,7 +28,6 @@
                             <?php include dirname(__FILE__) . '/blocks/modules/sidebar/apps.php' ?><!-- ./apps -->
                             <?php include dirname(__FILE__) . '/blocks/modules/sidebar/articles.php' ?><!-- ./articles -->
                             <?php include dirname(__FILE__) . '/blocks/modules/sidebar/poll.php' ?><!-- ./poll -->
-                            <?php include dirname(__FILE__) . '/blocks/modules/sidebar/banners.php' ?><!-- ./banners -->
                         </aside>
                     </div>
                 </div>

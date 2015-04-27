@@ -8,7 +8,6 @@
     </head>
     <body>
         <?php include dirname(__FILE__) . '/blocks/shared/header.php' ?><!-- ./header -->
-        <?php include dirname(__FILE__) . '/blocks/modules/ads.php' ?><!-- ./ads -->
         <section id="main">
             <div class="wrapper">
                 <div class="container">

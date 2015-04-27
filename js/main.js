@@ -558,8 +558,7 @@ var Itemlist = {
     }
 };
 var Ticker = {
-    titles: { 'breaking': 'Último Momento', 'latest': 'Síganos En' }
-    , init: function () {
+    init: function () {
         if ($("#ticker .titles ul").length) {
             if ($("#ticker .titles ul").find("li").length > 1) {
                 setInterval(function () {
@@ -573,9 +572,9 @@ var Ticker = {
             var $ticker = $(this);
             $ticker.find('li:first').slideUp(function () {
                 if ($ticker.find('li').eq(1).hasClass('breaking')) {
-                    $("#ticker").find(".header").addClass('breaking').find("span").text(Ticker.titles.breaking);
+                    $("#ticker").find(".header").addClass('breaking').find("span").text($("#ticker").attr('data-breaking-title'));
                 } else {
-                    $("#ticker").find(".header").removeClass('breaking').find("span").text(Ticker.titles.latest);
+                    $("#ticker").find(".header").removeClass('breaking').find("span").text($("#ticker").attr('data-latest-title'));
                 }
                 $(this).appendTo($ticker).slideDown();
             });

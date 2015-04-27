@@ -9,10 +9,16 @@
 							<div class="temperature">16 C</div>
 							<div class="location">Madrid, Spain</div>
 							<div class="choose-location">
-								<a class="select-handler" data-bind="region">Choose your region</a>
-								<select name="region">
-									<option value="0">Tehran, Iran</option>
-									<option value="1">Madrid, Spain</option>
+								<select name="region" id="region-select" data-type="select" data-placeholder="Select Region">
+									<option value="0" selected="selected">Tehran</option>
+									<option value="1">Inja</option>
+									<option value="2">oonja</option>
+									<option value="3">Invara</option>
+									<option value="4">Oonvara</option>
+									<option value="5">Balatar</option>
+									<option value="6">Dast Rast</option>
+									<option value="7">Janbe baghali</option>
+									<option value="8">Manzel</option>
 								</select>
 							</div>
 						</div>

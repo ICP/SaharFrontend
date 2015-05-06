@@ -4,7 +4,7 @@
 @ticker-height: 30px;
 
 // Rules
-#header { background: #303030; position: relative; margin-bottom: 10px; font-family: 'Hispan', Arial; }
+#header { background: #303030; position: relative; margin-bottom: 10px; font-family: Arial; }
 #masthead { 
     height: @masthead-height; border-bottom: 2px solid #a61b21; background: #222; color: #b2b2b2; position: absolute; top: 0; left: 0; width: 100%; text-transform: uppercase; font-weight: bold;
     ul { 
@@ -36,7 +36,7 @@
     ul { 
         margin: 0;
         li { 
-            padding: 0; font-weight: bold; text-transform: uppercase; position: relative;
+            padding: 0; font-weight: bold; position: relative;
             & ~ li { margin-left: 2px; }
             &.search {
                 a { 
@@ -94,7 +94,7 @@
 #ticker {
     height: @ticker-height; background: #e7e5d0; color: #303030; line-height: @ticker-height;
     .header {
-        background: #FAA61A; color: #fff; text-transform: uppercase; font-weight: bold; text-align: right; padding-right: 20px;
+        background: #FAA61A; color: #fff; font-weight: bold; text-align: right; padding-right: 20px;
         &.breaking { background: #d2171f; }
     }
     .titles { height: @ticker-height; overflow: hidden; font-family: Arial; }

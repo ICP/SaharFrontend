@@ -4,7 +4,7 @@
 @ticker-height: 30px;
 
 // Rules
-#header { background: #303030; position: relative; margin-bottom: 20px; font-family: Arial; }
+#header { background: #072633; position: relative; margin-bottom: 20px; font-family: Arial; }
 #masthead { 
     height: @masthead-height; border-bottom: 2px solid #a61b21; background: #222; color: #b2b2b2; position: absolute; top: 0; left: 0; width: 100%; text-transform: uppercase; font-weight: bold;
     ul { 
@@ -44,7 +44,7 @@
                     &:before { display: none; }
                 }
                 .search-form {
-                    position: absolute; top: 0; right: 44px; background: @patternBg repeat 0 0 #a61b21; overflow: hidden;
+                    position: absolute; top: 0; right: 44px; background: lighten(#072633, 5%); overflow: hidden;
                     form {
                         position: relative; padding: 8px;
                         .form-group { margin: 0; }
@@ -54,7 +54,7 @@
                 }
             }
             & > a {
-                display: block; height: 44px; line-height: 44px; padding: 0 20px; /*width: 120px;*/ background: @patternBg repeat 0 0 #3b3b3b; text-decoration: none; color: #cdcdcd; overflow: hidden; position: relative; transition: all 0.2s;
+                display: block; height: 44px; line-height: 44px; padding: 0 20px; /*width: 120px;*/ background: lighten(#072633, 5%); text-decoration: none; color: #cdcdcd; overflow: hidden; position: relative; transition: all 0.2s;
             }
             &:focus > a, &:hover > a, &.active > a, & > a:hover { 
                 background-color: #a61b21;
@@ -62,7 +62,7 @@
             &.haschild {
                 & > a {
                     padding-right: 50px;
-                    &:before { display: block; position: absolute; top: 12px; right: 10px; width: 20px; height: 20px; content: '\e802'; background: tomato; line-height: 20px; text-indent: 0; text-align: center; color: #fff; background: #303030; font-family: "hispan-icons"; font-size: 12px; }
+                    &:before { display: block; position: absolute; top: 12px; right: 10px; width: 20px; height: 20px; content: '\e802'; background: tomato; line-height: 20px; text-indent: 0; text-align: center; color: #fff; background: #072633; font-family: "hispan-icons"; font-size: 12px; }
                 }
                 &:hover > a, &.active > a, & > a:hover {
                     &::before { background-color: #5d0f0f; content: '\e805'; }
@@ -72,12 +72,12 @@
                     .child { display: block; }
                 }
                 .child {
-                    display: none; position: absolute; left: 0; top: 49px; width: 580px; background: #222; z-index: 600; padding: 30px 50px 30px 10px;
+                    display: none; position: absolute; left: 0; top: 49px; width: 580px; background: darken(#072633, 5%); z-index: 600; padding: 30px 50px 30px 10px;
                     ul {
                         li {
                             & ~ li { margin: 0; }
                             a {
-                                background: #222; line-height: 36px; height: 36px; border-bottom: 1px solid #343434; text-transform: none;
+                                background: darken(#072633, 5%); line-height: 36px; height: 36px; border-bottom: 1px solid #343434; text-transform: none;
                                 &:hover { background: #d4d4d4; color: #222; }
                             }
                         }
@@ -88,11 +88,11 @@
     }
 }
 #logo { 
-    margin: 5px 0 0 0; width: 140px; height: 60px; position: relative; overflow: hidden;
-    a { display: block; width: 140px; height: 60px; overflow: hidden; background: url('../img/logo.png') no-repeat 0 0 transparent; text-indent: 999px }
+    margin: 0px 0 0 0; width: 140px; height: 75px; position: relative; overflow: hidden;
+    a { display: block; width: 140px; height: 75px; overflow: hidden; background: url('../img/logo.png') no-repeat 0 0 transparent; text-indent: 999px }
 }
 #ticker {
-    height: @ticker-height; background: #e7e5d0; color: #303030; line-height: @ticker-height;
+    height: @ticker-height; background: #ededed; color: #303030; line-height: @ticker-height;
     .header {
         background: #FAA61A; color: #fff; font-weight: bold; text-align: right; padding-right: 20px;
         &.breaking { background: #d2171f; }

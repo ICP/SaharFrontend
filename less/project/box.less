@@ -81,12 +81,14 @@
     .img {
         min-height: 60px;
         & > a { display: block; width: 100%; position: relative; }
-        &.video { 
+        &.video, &.audio { 
             display: block; position: relative; width: 100%; overflow: hidden;
             a {
-                &:after { content: '\e80a'; font-family: "irib-icons"; position: absolute; width: 40px; height: 40px; left: 50%; top: 50%; margin: -20px 0 0 -20px; background: #000; background: rgba(0, 0, 0, 0.5); border-radius: 20px; border: 2px solid #fff; box-shadow: 0 0 5px #333; font-size: 18px; text-align: center; line-height: 36px; color: rgba(255, 255, 255, 0.8); text-indent: 3px; }
+                &:after { font-family: "irib-icons"; position: absolute; width: 40px; height: 40px; left: 50%; top: 50%; margin: -20px 0 0 -20px; background: #000; background: rgba(0, 0, 0, 0.5); border-radius: 20px; border: 2px solid #fff; box-shadow: 0 0 5px #333; font-size: 18px; text-align: center; line-height: 36px; color: rgba(255, 255, 255, 0.8); text-indent: 3px; }
             }
         }
+	&.video { a:after { content: '\e80a'; } }
+	&.audio { a:after { content: '\e84f'; } }
     }
     &.tabs {
         .panel-title {
@@ -349,7 +351,7 @@
 /** Single Items **/
 .item {
     position: relative;
-    &.video {
+    &.video, &.audio {
         .img {}
         a {
             display: block; position: relative; width: 100%; overflow: hidden;
@@ -390,6 +392,18 @@
                 &:after { display: none; }
             }
         }
+    }
+    &.video { 
+	a:before { content: '\e80a'; }
+	&.medium {
+	    .img > a:after { content: '\e80a'; }
+	}
+    }
+    &.audio {
+	a:before { content: '\e84f'; }
+	&.medium {
+	    .img > a:after { content: '\e84f'; }
+	}
     }
     &.image {
         position: relative;

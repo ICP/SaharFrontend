@@ -1,5 +1,5 @@
 {
-  "name": "hispan-icons",
+  "name": "irib-icons",
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
@@ -473,6 +473,12 @@
       "css": "play",
       "code": 59402,
       "src": "zocial"
+    },
+    {
+      "uid": "b59b3b618699b467541f631edd5a02ed",
+      "css": "speaker",
+      "code": 59471,
+      "src": "elusive"
     },
     {
       "uid": "616b755d0f4c7d2dc7a1dcc2e5427039",

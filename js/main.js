@@ -116,7 +116,7 @@ var Search = {
                 e.preventDefault();
             }
         });
-        $(".search-form").find("input").focusout(function () {
+        $("#menu .search-form").find("input").focusout(function () {
             $(".search-form").animate({ 'width': '0' }, function () {
                 $item.removeClass('active');
             });

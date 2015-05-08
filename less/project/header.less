@@ -1,22 +1,31 @@
 // Defining header variables
-@masthead-height: 30px;
-@navbar-height: 75px;
+@masthead-height: 80px;
+@navbar-height: 32px;
 @ticker-height: 30px;
 
 // Rules
-#header { background: #072633; position: relative; margin-bottom: 20px; font-family: Arial; }
+#header { background: darken(#962f30, 10%); position: relative; margin-bottom: 20px; font-family: Arial; }
 #masthead { 
-    height: @masthead-height; border-bottom: 2px solid #a61b21; background: #222; color: #b2b2b2; position: absolute; top: 0; left: 0; width: 100%; text-transform: uppercase; font-weight: bold;
+    height: @masthead-height; /*border-bottom: 2px solid #a61b21;*/ background: #962f30; color: #b2b2b2; position: absolute; top: 0; left: 0; width: 100%; font-weight: bold;
     ul { 
-        padding-top: 5px; margin: 0;
+        padding-top: 35px; margin: 0;
         li { 
-            height: 14px; line-height: 14px; padding: 0 10px;
+            height: 14px; line-height: 28px; padding: 0 10px;
             & ~ li { border-left: 2px solid #b2b2b2; }
-            &:last-child { /*border-left: 0 transparent;*/ padding-right: 0 }
+            &:last-child { border-left: 0 transparent; padding-right: 0; margin-top: -4px; float: right; }
+	    .search {
+		background: lighten(#962f30, 5%); overflow: hidden;
+		form {
+		    position: relative;
+		    .form-group { margin: 0; }
+		    input { background: none repeat scroll 0 0 #000; border: 0 none; border-radius: 0;height: 28px;width: 180px; color: #fff; }
+		    button { background: transparent; border: 0 none; position: absolute; top: 2px; right: 2px; height: 28px; width: 28px; }
+		}
+	    }
         }
     }
     a { 
-        color: #b2b2b2; 
+        color: #eee; display: block; line-height: 14px;
         &:hover { color: #fff; text-decoration: none; }
         &.btn { 
             color: #fff; margin-top: -4px; font-weight: bold;
@@ -28,52 +37,53 @@
     }
 }
 #navbar { 
-    padding-top: 30px;
+    padding-top: 80px;
     & > .container { height: @navbar-height; }
 }
 #menu {
-    margin-top: 26px; position: relative;
+    position: relative;
     ul { 
-        margin: 0;
+        margin: 0; height: 32px;
         li { 
             padding: 0; font-weight: bold; position: relative;
-            & ~ li { margin-left: 2px; }
+            /*& ~ li { margin-left: 2px; }*/
             &.search {
                 a { 
                     width: 44px; text-align: center; text-indent: 0; padding: 0;
                     &:before { display: none; }
                 }
                 .search-form {
-                    position: absolute; top: 0; right: 44px; background: lighten(#072633, 5%); overflow: hidden;
+                    position: absolute; top: 0; right: 44px; background: #962f30; overflow: hidden;
                     form {
-                        position: relative; padding: 8px;
+                        position: relative; padding: 4px;
                         .form-group { margin: 0; }
-                        input { background: none repeat scroll 0 0 #000; border: 0 none; border-radius: 0;height: 28px;width: 180px; color: #fff; }
-                        button { background: transparent; border: 0 none; position: absolute; top: 8px; right: 8px; height: 28px; width: 28px; }
+                        input { background: none repeat scroll 0 0 #000; border: 0 none; border-radius: 0;height: 24px;width: 180px; color: #fff; }
+                        button { background: transparent; border: 0 none; position: absolute; top: 3px; right: 8px; height: 28px; width: 28px; }
                     }
                 }
             }
             & > a {
-                display: block; height: 44px; line-height: 44px; padding: 0 20px; /*width: 120px;*/ background: lighten(#072633, 5%); text-decoration: none; color: #cdcdcd; overflow: hidden; position: relative; transition: all 0.2s;
+                display: block; height: 32px; line-height: 32px; padding: 0 20px; /*width: 120px;*/ text-decoration: none; color: #cdcdcd; overflow: hidden; position: relative; transition: all 0.2s;
             }
             &:focus > a, &:hover > a, &.active > a, & > a:hover { 
-                background-color: #a61b21;
+                background-color: #962f30; color: #efefef;
             }
             &.haschild {
                 & > a {
-                    padding-right: 50px;
-                    &:before { display: block; position: absolute; top: 12px; right: 10px; width: 20px; height: 20px; content: '\e802'; background: tomato; line-height: 20px; text-indent: 0; text-align: center; color: #fff; background: #072633; font-family: "irib-icons"; font-size: 12px; }
+                    padding-right: 40px;
+                    &:before { display: block; position: absolute; top: 6px; right: 10px; width: 20px; height: 20px; content: '\e802'; line-height: 20px; text-indent: 0; text-align: center; color: #fff; font-family: "irib-icons"; font-size: 12px; transition: all 0.25s; }
                 }
                 &:hover > a, &.active > a, & > a:hover {
-                    &::before { background-color: #5d0f0f; content: '\e805'; }
+                    &::before { background: darken(#962f30, 20%); content: '\e805'; }
                 }
                 &.active, &:hover {
-                    border-bottom: 5px solid #5d0f0f;
-                    .child { display: block; }
+                    /*border-bottom: 5px solid #5d0f0f;*/
+                    .child { display: block; opacity: 1; }
                 }
                 .child {
-                    display: none; position: absolute; left: 0; top: 49px; width: 580px; background: darken(#072633, 5%); z-index: 600; padding: 30px 50px 30px 10px;
+                    display: none; opacity: 0; position: absolute; left: 0; top: 32px; width: 580px; background: darken(#072633, 5%); z-index: 600; padding: 30px 50px 30px 10px; transition: all 0.25s;
                     ul {
+			height: auto;
                         li {
                             & ~ li { margin: 0; }
                             a {

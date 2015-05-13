@@ -13,7 +13,7 @@
 							<li><a href="#" class="btn btn-danger btn-xs">Watch Live <i class="icon-tv"></i></a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">TV</a></li>
-							<li><a href="#">Radio</a></li>
+							<li class="active"><a href="#">Radio</a></li>
 							<li><div class="search"><form action="/search" method="get"><div class="form-group"><input type="text" name="q" class="form-control bg_grey" placeholder="Search..." /><button type="submit"><i class="icon-search"></i></button></div></form></div></li>
 						</ul>
 					</div>

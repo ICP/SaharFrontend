@@ -88,7 +88,7 @@
     .img {
         min-height: 60px;
         & > a { display: block; width: 100%; position: relative; }
-        &.video, &.audio { 
+        &.video, &.audio, &.gallery { 
             display: block; position: relative; width: 100%; overflow: hidden;
             a {
                 &:after { font-family: "irib-icons"; position: absolute; width: 40px; height: 40px; left: 50%; top: 50%; margin: -20px 0 0 -20px; background: #000; background: rgba(0, 0, 0, 0.5); border-radius: 20px; border: 2px solid #fff; box-shadow: 0 0 5px #333; font-size: 18px; text-align: center; line-height: 36px; color: rgba(255, 255, 255, 0.8); text-indent: 3px; }
@@ -96,6 +96,7 @@
         }
 	&.video { a:after { content: '\e80a'; } }
 	&.audio { a:after { content: '\e84f'; } }
+	&.gallery { a:after { content: '\e811'; } }
     }
     &.tabs {
         .panel-title {
@@ -358,7 +359,7 @@
 /** Single Items **/
 .item {
     position: relative;
-    &.video, &.audio {
+    &.video, &.audio, &.gallery {
         .img {}
         a {
             display: block; position: relative; width: 100%; overflow: hidden;
@@ -412,11 +413,11 @@
 	    .img > a:after { content: '\e84f'; }
 	}
     }
-    &.image {
-        position: relative;
-        .img {
-            &:after { content: '\e811'; font-family: "irib-icons"; position: absolute; width: 60px; height: 60px; left: 50%; top: 50%; margin: -30px 0 0 -30px; text-shadow: 0 0 5px #333; font-size: 48px; text-align: center; line-height: 40px; color: rgba(255, 255, 255, 0.8); text-indent: 0; }
-        }
+    &.gallery {
+	a:before { content: '\e811'; }
+	&.medium {
+	    .img > a:after { content: '\e811'; }
+	}
     }
 } 
 .panel.top-news {
@@ -815,10 +816,10 @@
     }
 }
 #programs {
-    .item {
-        &.video {
+    .item.medium {
+        &.video, &.audio, &.gallery {
             a:before {
-                margin-top: 0; top: 64px;
+                margin-top: 0; top: 30px;
             }
         }
     }

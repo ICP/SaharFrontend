@@ -5,7 +5,7 @@
 				<div class="item">
 					<div class="inner">
 						<div class="img video">
-							<img src="data/smpl10.jpg" alt="" />
+							<a href="#"><img src="data/smpl10.jpg" alt="" /></a>
 						</div>
 						<div class="section green">
 							<a href="#">United States</a>

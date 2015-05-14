@@ -1,44 +1,4 @@
 <footer id="footer">
-	<div id="mastfoot" class="wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
-					<div id="weather">
-						<div class="inner">
-							<div class="type-image"><i class="icon-cloud-moon"></i></div>
-							<div class="temperature">16 C</div>
-							<div class="location">Madrid, Spain</div>
-							<div class="choose-location">
-								<select name="region" id="region-select" data-type="select" data-placeholder="Select Region">
-									<option value="0" selected="selected">Tehran</option>
-									<option value="1">Inja</option>
-									<option value="2">oonja</option>
-									<option value="3">Invara</option>
-									<option value="4">Oonvara</option>
-									<option value="5">Balatar</option>
-									<option value="6">Dast Rast</option>
-									<option value="7">Janbe baghali</option>
-									<option value="8">Manzel</option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<div id="sharings-footer">
-						<ul class="list-unstyled list-inline pull-right">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-youtube"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-gplus"></i></a></li>
-							<li><a href="#"><i class="icon-rss"></i></a></li>
-							<li><a href="#"><i class="icon-chat"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="nav-footer" class="wrapper">
 		<div class="container">
 			<div class="row">
@@ -93,30 +53,15 @@
 					</div>
 				</div>
 				<div class="col-xs-4 col-xs-push-1">
-					<div id="newsletter">
-						<div class="panel newsletter">
-							<div class="panel-heading">Newsletter</div>
-							<div class="panel-body">
-								<form role="form" action="#">
-									<dl class="dl-horizontal">
-										<dt class="label"><span>Select your desired sections:</span></dt>
-										<dd class="form-group">
-											<a class="select-handler" data-bind="section">Top News</a>
-											<select name="section">
-												<option value="0">Tehran, Iran</option>
-												<option value="1">Madrid, Spain</option>
-											</select>
-										</dd>
-										<dt class="label"><span>Enter your Email address:</span></dt>
-										<dd class="form-group">
-											<input type="email" class="form-control" name="email"/>
-										</dd>
-										<dt class="label"><span>&nbsp;</span></dt>
-										<dd class="form-group"><a href="#" class="btn black">Subscribe</a></dd>
-									</dl>
-								</form>
-							</div>
-						</div>
+					<div id="sharings-footer">
+						<ul class="list-unstyled list-inline pull-right">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-gplus"></i></a></li>
+							<li><a href="#"><i class="icon-rss"></i></a></li>
+							<li><a href="#"><i class="icon-chat"></i></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>

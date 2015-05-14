@@ -276,6 +276,13 @@
             &.featured { 
                 & > .inner { position: relative; }
                 .title { display: block; position: absolute; bottom: 10px; left: 0; width: 100%; color: #fff; font-weight: bold; font-size: 16px; padding: 0 10px; }
+		&.title-top {
+		    .img { clear: left; }
+		    .title {
+			position: static;font-size: 24px; padding: 0;
+                        a { font-size: 24px; }
+		    }
+		}
             }
         }
     }
@@ -310,6 +317,7 @@
                         }
                     }
                     .img { width: 430px; }
+		    &.title-top { min-height: 280px; }
                 }
                 &.img-right {
                     .img { float: right; margin-right: 0; margin-left: 20px; }

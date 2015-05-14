@@ -1,5 +1,5 @@
-<div id="news-digest" class="row hidden-sm hidden-xs">
-    <div class="col-xs-6">
+<div id="news-digest" class="row">
+    <div class="col-sm-6 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -45,7 +45,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-6 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -137,7 +137,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -183,7 +183,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -229,7 +229,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -275,7 +275,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">
@@ -321,7 +321,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-sm-4 col-xs-12">
         <div class="panel itemlist bullets">
             <div class="panel-title"><span>EE.UU.</span></div>
             <div class="panel-body">

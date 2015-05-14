@@ -19,7 +19,7 @@
 				<li class="featured title-top">
 					<div class="inner">
 						<div class="title">
-							<h3><a href="#">Podemos: el TTIP es 'golpe de estado encubierto' de grandes empresas</a></h3>
+							<h2><a href="#">Podemos: el TTIP es 'golpe de estado encubierto' de grandes empresas</a></h2>
 						</div>
 						<div class="img">
 							<a href="#">

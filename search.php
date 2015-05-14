@@ -19,51 +19,40 @@
 							<div id="search">
 								<div class="search-filter">
 									<form class="form-horizontal" role="form">
-										<div class="row">
-											<div class="col-xs-12 col-sm-4">
+										<div class="row simple">
+											<div class="col-xs-8">
 												<div class="form-group">
-													<label for="" class="col-sm-2 control-label">From: </label>
-													<div class="col-sm-3">
-														<select class="form-control">
-															<option value="0">Day</option>
-														</select>
-													</div>
-													<div class="col-sm-3">
-														<select class="form-control">
-															<option value="0">Day</option>
-														</select>
-													</div>
-													<div class="col-sm-3">
-														<select class="form-control">
-															<option value="0">Day</option>
-														</select>
+													<label for="" class="col-xs-2 control-label">Search:</label>
+													<div class="col-xs-10">
+														<input name="q" type="text" class="form-control" value="kerry" />
 													</div>
 												</div>
 											</div>
-											<div class="col-xs-12 col-sm-4">
+											<div class="col-xs-4 text-right">
+												<a href="#" class="show-advanced"><i class="icon-down"></i> More Options</a>
+											</div>
+										</div>
+										<div class="row advanced" style="display:none;">
+											<div class="col-xs-4">
 												<div class="form-group">
-													<label for="" class="col-sm-2 control-label">To: </label>
-													<div class="col-sm-3">
-														<select class="form-control">
-															<option value="0">Day</option>
-														</select>
-													</div>
-													<div class="col-sm-3">
-														<select class="form-control">
-															<option value="0">Day</option>
-														</select>
-													</div>
-													<div class="col-sm-3">
-														<select class="form-control">
-															<option value="0">Day</option>
-														</select>
+													<label for="" class="col-xs-4 control-label">From: </label>
+													<div class="col-xs-8">
+														<input name="q" type="text" class="form-control datepicker" />
 													</div>
 												</div>
 											</div>
-											<div class="col-xs-12 col-sm-4">
+											<div class="col-xs-4">
 												<div class="form-group">
-													<label for="" class="col-sm-3 control-label">Section: </label>
-													<div class="col-sm-9">
+													<label for="" class="col-xs-4 control-label">To: </label>
+													<div class="col-xs-8">
+														<input name="q" type="text" class="form-control datepicker" />
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-4">
+												<div class="form-group">
+													<label for="" class="col-xs-4 control-label">Section: </label>
+													<div class="col-xs-8">
 														<select class="form-control">
 															<option value="0">All Sections</option>
 														</select>
@@ -73,7 +62,7 @@
 										</div>
 										<div class="row">
 											<div class="col-xs-12">
-												<button type="submit" class="btn black pull-right">Search</button>
+												<button type="submit" class="btn black">Search</button>
 												<div class="clearfix"></div>
 											</div>
 										</div>

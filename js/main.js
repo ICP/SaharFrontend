@@ -121,6 +121,10 @@ var Search = {
                 $item.removeClass('active');
             });
         });
+	$(".show-advanced").on('click', function(e) {
+	    $(".advanced").slideDown();
+	    e.preventDefault();
+	});
     }
 };
 var Item = {
@@ -738,9 +742,14 @@ var Calendar = {
     init: function () {
         if ($(".calendar").length) {
             $(".calendar").datepicker({
-                language: "es"
+                language: "az"
             });
         }
+	if ($(".datepicker").length) {
+	    $(".datepicker").datepicker({
+                language: "az"
+            });
+	}
     }
 };
 var Tooltip = {

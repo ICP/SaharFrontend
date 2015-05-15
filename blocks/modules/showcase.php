@@ -19,5 +19,105 @@
 				</div>
 			</div>
 		</div>
+		<div class="panel tiles">
+			<div class="panel-body">
+				<div class="row">
+					<ul class="list-unstyled">
+						<li class="tile col-xs-12 col-sm-4">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+						<li class="tile col-xs-12 col-sm-4">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+						<li class="tile col-xs-12 col-sm-4">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="panel tiles">
+			<div class="panel-body">
+				<div class="row">
+					<ul class="list-unstyled">
+						<li class="tile col-xs-12 col-sm-3">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+						<li class="tile col-xs-12 col-sm-3">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+						<li class="tile col-xs-12 col-sm-3">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+						<li class="tile col-xs-12 col-sm-3">
+							<div class="inner">
+								<div class="img video">
+									<a href="#">
+										<img src="data/smpl8.jpg" alt="" />
+									</a>
+								</div>
+								<div class="desc">
+									<h4><a href="#">Cine a Contra Corriente</a></h4>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

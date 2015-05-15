@@ -45,12 +45,12 @@
 																<div class="inner row">
 																	<div class="col-xs-12 col-sm-8">
 																		<div class="img">
-																			<img src="data/smpl11.jpg" alt="" />
+																			<a href="#"><img src="data/smpl11.jpg" alt="" /></a>
 																		</div>
 																	</div>
 																	<div class="col-xs-12 col-sm-4 desc">
 																		<div class="desc">
-																			<h2>12 alimentos inteligentes: cómalos para potenciar su cerebro</h2>
+																			<h2><a href="#">12 alimentos inteligentes: cómalos para potenciar su cerebro</a></h2>
 																			<p>Destellos de relámpagos, flujo de lava ardiente y nubes de cenizas gigantes liberados desde el cráter durante la erupción del volcán Sinabung, en la isla de Sumatra. 14 de octubre 2014.</p>
 																			<div class="date">25 minutes ago</div>
 																			<div class="panel share">
@@ -70,12 +70,12 @@
 																<div class="inner row">
 																	<div class="col-xs-12 col-sm-8">
 																		<div class="img">
-																			<img src="data/smpl12.jpg" alt="" />
+																			<a href="#"><img src="data/smpl12.jpg" alt="" /></a>
 																		</div>
 																	</div>
 																	<div class="col-xs-12 col-sm-4 desc">
 																		<div class="desc">
-																			<h2>aev adv iuadvl avljkha vlkja va</h2>
+																			<h2><a href="#">aev adv iuadvl avljkha vlkja va</a></h2>
 																			<p>khg kg jkh kjhg kjhg jkhg kjhg jkhg i dvo;iadv ijad v;oiad v;jad v;kladm vlkadn vljhdav kh advkjhb avkjhb advkhba dvlg avhba dvh.</p>
 																			<div class="date">25 minutes ago</div>
 																			<div class="panel share">

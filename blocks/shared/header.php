@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-xs-4 col-sm-3 col-md-2">
 					<h1 id="logo">
-						<a href="#">HispanTV</a>
+						<a href="#">IRIB Azeri</a>
 					</h1>
 				</div>
 				<div class="col-xs-8 col-md-8 col-md-offset-2">

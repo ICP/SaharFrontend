@@ -37,7 +37,7 @@
 												<div class="form-group">
 													<label for="" class="col-xs-4 control-label">From: </label>
 													<div class="col-xs-8">
-														<input name="q" type="text" class="form-control datepicker" />
+														<input name="q" type="text" class="form-control datepick" />
 													</div>
 												</div>
 											</div>
@@ -45,7 +45,7 @@
 												<div class="form-group">
 													<label for="" class="col-xs-4 control-label">To: </label>
 													<div class="col-xs-8">
-														<input name="q" type="text" class="form-control datepicker" />
+														<input name="q" type="text" class="form-control datepick" />
 													</div>
 												</div>
 											</div>

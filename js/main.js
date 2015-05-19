@@ -737,7 +737,7 @@ var PanelRequests = {
             }
         }
     }
-}
+};
 var Calendar = {
     init: function () {
         if ($(".calendar").length) {
@@ -745,8 +745,8 @@ var Calendar = {
                 language: "az"
             });
         }
-	if ($(".datepicker").length) {
-	    $(".datepicker").datepicker({
+	if ($(".datepick").length) {
+	    $(".datepick").datepicker({
                 language: "az"
             });
 	}

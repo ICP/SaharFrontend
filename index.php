@@ -19,6 +19,7 @@
 							<?php include dirname(__FILE__) . '/blocks/modules/utility.php' ?><!-- ./utility -->
 						</section>
 						<aside id="sidebar" class="col-xs-12 col-md-4">
+							<?php include dirname(__FILE__) . '/blocks/modules/sidebar/radio.php' ?><!-- ./radio -->
 							<?php include dirname(__FILE__) . '/blocks/modules/sidebar/latest.php' ?><!-- ./latest -->
 							<?php include dirname(__FILE__) . '/blocks/modules/sidebar/bulletin.php' ?><!-- ./bulletin -->
 							<?php include dirname(__FILE__) . '/blocks/modules/sidebar/sharings.php' ?><!-- ./sharings -->

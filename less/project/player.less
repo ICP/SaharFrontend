@@ -1,1 +1,46 @@
 #player { margin-bottom: 20px; }
+
+body.player-page {
+    font-family: 'Oxygen', 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    .page-type {
+	margin-top: 20px; font-weight: normal; font-size: 18px; padding: 0 30px; border-left: 1px solid #eee; color: #fff; line-height: 40px;
+    }
+    #player {
+	/*.player-inner { background-color: #49535c; padding: 20px; }*/
+	.logo { background-color: #49535c; background: url('../img/header_bg.jpg') repeat-x 0 0 transparent; position: relative; min-height: 20px; height: 80px; z-index: 99; border-radius: 5px 5px 0 0; box-shadow: 0px 0px 0px 1px #363636; }
+	/*.player-data { -webkit-border-radius: 5px 5px 0px 0px; -webkit-box-shadow: 0px 0px 0px 1px #363636; }  Webkit*/ 
+	.logo {
+	    a { display: block; position: absolute; top: 0; left: 20px; width: 250px; height: 80px; }
+	}
+	.player-data {
+	    background-color: #6d8295; padding: 20px 20px 10px 20px; /*border-radius: 0px 0px 5px 5px; */box-shadow:  0px 0px 1px 1px #333; -webkit-box-shadow: 0px 0px 1px 1px #333;  /* Webkit */
+	    .table {
+		border-color: #3f4c56 #4b5a69 #4b5a69 #404d59; margin-bottom: 10px;
+		a {
+		    display: block; color: #c2c7cc;
+		    &:hover { text-decoration: none; color: #fff; }
+		    .data-icon { color: #4e5e6d; text-shadow: 0 -1px 0 #333; }
+		}
+		td { border-left: 1px solid #3f4c56; border-top: 1px solid #4b5a69; }
+		tr {
+		    background-color: #5d6f80; color: #fff;
+		    &:hover { background-color: #4b5a69; }
+		}
+		.item { color: #fff; }
+		.radio { color: #c2c7cc; }
+		.links-group span { display: inline-block; }
+	    }
+	}
+	#playlist {
+	    margin-top: 20px; 
+	    /*.playlist-inner { margin: 0 20px; }*/
+	    /*.id { display: inline-block; color: #BBB; width: 25px; margin: 0 10px; text-align: center; font-weight: bold; }*/
+	    /*.time { display: inline-block; color: #BBB; width: 25px; margin: 0 10px; font-size: 12px; }*/
+	}
+	
+	#footer { text-align: center; color: #c2c7cc }
+	#mediaplayer { height: 44px !important; overflow: hidden; margin-top: 20px; }
+	.wmedia-link { float: right; color: #efefef; margin-top: 20px; }
+    }
+    .lt-ie10 .player-data .table a span.title { float: left } /* IE 7 */
+}

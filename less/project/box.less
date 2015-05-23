@@ -29,7 +29,7 @@
         .panel-title {
             position: relative; background: #fff; margin-bottom: 12px; font-family: Arial; font-weight: bold;
             &:after { content: ""; display: block !important; position: absolute; height: 3px; background: #303030; top: 8px; left: 0; width: 100%; }
-            span { display: inline-block; color: #a61b21; font-weight: bold; font-size: 20px; line-height: 20px; text-transform: uppercase; background: #fff; position: relative; z-index: 12; margin-left: 15px; padding: 0 7px }
+            span { display: inline-block; color: #a61b21; font-weight: bold; font-size: 20px; line-height: 20px; /*text-transform: uppercase;*/ background: #fff; position: relative; z-index: 12; margin-left: 15px; padding: 0 7px }
         }
         &.title-border-top {
             margin-top: 10px;
@@ -67,7 +67,7 @@
         .item { 
             position: relative;
             .section { 
-                display: block; position: absolute; top: 0; left: 0; float: left; font-family: Arial; font-weight: bold; text-transform: uppercase; color: #fff; z-index: 67;
+                display: block; position: absolute; top: 0; left: 0; float: left; font-family: Arial; font-weight: bold; /*text-transform: uppercase;*/ color: #fff; z-index: 67;
                 background-image: @PatternLight; background-repeat: repeat;
                 &:after, &::before { display: none !important; }
                 &.green { background-color: #7ec352; }
@@ -119,7 +119,7 @@
         }
         &.schedule-page {
             .btn.btn-danger { border-radius: 0; background: #a61b21; }
-            .big-title { font-family: Arial; font-weight: bold; text-transform: uppercase; margin-top: 40px; }
+            .big-title { font-family: Arial; font-weight: bold; /*text-transform: uppercase;*/ margin-top: 40px; }
         }
         &.title-tabs {
             .panel-title { 
@@ -209,7 +209,7 @@
                & + span { top: 32px; }
         }
         .time { font-size: 26px; }
-        .title { color: #c7c5c2; font-size: 16px; font-weight: bold; text-transform: uppercase; }
+        .title { color: #c7c5c2; font-size: 16px; font-weight: bold; /*text-transform: uppercase;*/ }
     }
     .img {
         background: #333;
@@ -523,7 +523,7 @@
         position: absolute; top: 0; left: 0; z-index: 103;
         ul {
             li {
-                width: 140px; background: @patternBg repeat 0 0 #3b3b3b; position: relative; height: 41px; line-height: 40px; font-family: Arial; font-weight: 800; font-size: 14px; text-transform: uppercase;
+                width: 140px; background: @patternBg repeat 0 0 #3b3b3b; position: relative; height: 41px; line-height: 40px; font-family: Arial; font-weight: 800; font-size: 14px; /*text-transform: uppercase;*/
                 border-bottom: 1px solid #fff;
                 &:last-child { border: none transparent; }
                 a {
@@ -686,12 +686,12 @@
         margin-bottom: 0;
         li { margin-bottom: 20px; }
     }
-    .episode { color: #a61b21; font-family: Arial; font-weight: bold; text-transform: uppercase; font-size: 18px; line-height: 20px; }
+    .episode { color: #a61b21; font-family: Arial; font-weight: bold; /*text-transform: uppercase;*/ font-size: 18px; line-height: 20px; }
     .img {
         /*float: left; .img { width: auto !important; }*/
     }
     h3 {
-        margin-top: 0; font-family: Arial; font-weight: bold; text-transform: uppercase; 
+        margin-top: 0; font-family: Arial; font-weight: bold;/* text-transform: uppercase; */
         a { color: #000; }
     }
     .schedule {
@@ -710,7 +710,7 @@
 .panel.tiles {
     .panel-title {
         &:after { display: none; }
-        h3 {font-weight: bold; margin-top: 35px; font-family: "Hispan",Arial; text-transform: uppercase; color: #a61b21;}
+        h3 {font-weight: bold; margin-top: 35px; font-family: "Hispan",Arial; /*text-transform: uppercase;*/ color: #a61b21;}
     }
     .tile {
         position: relative; margin-bottom: 20px; max-height: 212px; overflow: hidden;

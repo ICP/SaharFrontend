@@ -630,6 +630,12 @@
 }
 .panel.schedules {
     .table {
+	a {
+	    color: #a61b21; transition: all 0.25s;
+	    &:hover {
+		color: darken(#a61b21, 10%); text-decoration: none;
+	    }
+	}
         th { border-bottom: 3px solid #3b3b3b; font-size: 12px; font-weight: bold; color: #a61b21; }
         tbody {
             tr {
@@ -648,12 +654,6 @@
     }
     &.schedules-condensed {
         .table {
-	    a {
-		color: #a61b21;
-		&:hover {
-		    color: darken(#a61b21, 10%); text-decoration: none;
-		}
-	    }
             tr {
                 height: 80px;  border: 0 none;
                 &.active {

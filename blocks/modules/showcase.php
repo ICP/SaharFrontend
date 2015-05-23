@@ -19,7 +19,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="panel tiles">
+		<div class="panel tiles title-outside">
 			<div class="panel-body">
 				<div class="row">
 					<ul class="list-unstyled">

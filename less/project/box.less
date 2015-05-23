@@ -739,6 +739,17 @@
             max-height: 157px;
         }
     }
+    &.title-outside {
+	.tile {
+	    .inner:after { display: none; }
+	    .desc {
+		position: static; margin: 6px 0 0 0;
+		h4 {
+		    a { color: @text-color; }
+		}
+	    }
+	}
+    }
 }
 .panel.poll {
     .answers {

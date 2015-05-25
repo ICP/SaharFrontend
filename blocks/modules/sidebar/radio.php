@@ -6,6 +6,9 @@
 				<ul class="list-unstyled">
 					<li class="lg">
 						<div class="inner">
+							<div class="progress">
+								<div class="seek" style="width: 30%;"></div>
+							</div>
 							<a href="#">
 								<span class="img"><i class="icon-speaker"></i></span>
 								<span class="title">Listen Live</span>

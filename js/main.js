@@ -1,6 +1,6 @@
 $(function() {
     // Init
-    Periodicals.init();
+    // Periodicals.init();
     Tooltip.init(); // Initializing Tooltip
     Ticker.init(); // Ticker initiation
     Item.init(); // item methods initialization

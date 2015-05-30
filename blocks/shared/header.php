@@ -7,7 +7,7 @@
 						<a href="#">IRIB Azeri</a>
 					</h1>
 				</div>
-				<div class="col-xs-8 col-sm-9 col-md-8 col-md-offset-2">
+				<div class="col-xs-8 col-sm-9 col-md-10">
 					<div class="pull-right">
 						<ul class="list-unstyled list-inline">
 							<li><a href="#" class="btn btn-danger btn-xs">Watch Live <i class="icon-tv"></i></a></li>

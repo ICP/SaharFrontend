@@ -41,14 +41,16 @@
 													<button type="submit"><i class="icon-search"></i></button>
 												</div>
 											</form>
-										</div></li>
+										</div>
+									</li>
 								</ul>
 							</div>
 							<a id="menu-toggle" class="btn btn-default pull-right hidden-md hidden-lg"><i class="icon-menu"></i></a>
 						</div>
 					</div>
 				</div>
-			</div><div id="navbar" class="wrapper">
+			</div>
+			<div id="navbar" class="wrapper">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -90,11 +92,8 @@
 														</li>
 													</ul>
 												</div>
-
-
 											</div>
 										</div>
-
 									</li>
 								</ul>
 							</nav>

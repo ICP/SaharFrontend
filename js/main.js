@@ -71,6 +71,18 @@ $(function() {
             e.preventDefault();
         }
     });
+    $("#search-toggle").click(function (e) {
+	if (!$("body").hasClass("search-open")) {
+	    $("body").addClass("search-open");
+	    $(".search .form-control").focus();
+	}
+	e.preventDefault();
+    });
+    $("#close-search").click(function(e) {
+	if ($("body").hasClass("search-open"))
+	    $("body").removeClass("search-open");
+	e.preventDefault();
+    });
     responsive_resize();
 });
 $(window).resize(function () { // Change width value on user resize, after DOM
@@ -868,8 +880,6 @@ var Cookie = {
         return "";
     }
 };
-//function setCookie(c_name, value, expiredays) { var exdate = new Date(); exdate.setDate(exdate.getDate() + expiredays); document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toUTCString()); }
-//var locdet1 = false; var locdet2 = document.createElement('script'); locdet2.setAttribute('src', 'http://edition.presstv.ir/js/loc/'); document.getElementsByTagName('head')[0].appendChild(locdet2); function locdet(v3) { locdet1 = v3; if (v3) setCookie('locdet1', true, 365); }
 /*!
  * jQuery Lazy - min - v0.3.8
  * http://jquery.eisbehr.de/lazy/

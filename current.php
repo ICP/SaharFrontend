@@ -32,20 +32,21 @@
 									<li class="">
 										<a href="http://azeri.sahartv.ir/radio">Radio </a>
 									</li>
-
-									<li>
+									<li class="hidden-sm hidden-xs">
 										<div class="search">
 											<form method="POST" action="http://azeri.sahartv.ir/news" accept-charset="UTF-8" class="form-horizontal" role="form" name="search"><input name="_token" type="hidden" value="EUMDJXRL7SFyobGW1AvbgtP1Uv0pp6K0f4a5UNn2">
 												<div class="form-group">
 													<input name="key" class="form-control bg_grey" placeholder="Axtarış" id="key-top-search" type="text">
 													<button type="submit"><i class="icon-search"></i></button>
 												</div>
+												<div id="close-search" class="hide">&times;</div>
 											</form>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<a id="menu-toggle" class="btn btn-default pull-right hidden-md hidden-lg"><i class="icon-menu"></i></a>
+							<a id="search-toggle" class="btn btn-default pull-right hidden-md hidden-lg"><i class="icon-search"></i></a>
 						</div>
 					</div>
 				</div>
@@ -101,14 +102,14 @@
 					</div>
 				</div>
 			</div>  
-        </header><!-- ./header -->
+		</header><!-- ./header -->
 
-        <section id="main">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="row">
-                        <section id="mainbody" class="col-xs-12 col-md-8">
-                            <div id="itemlist">
+		<section id="main">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<section id="mainbody" class="col-xs-12 col-md-8">
+							<div id="itemlist">
 								<div class="panel itemlist thumb thumbs-large">
 									<div class="panel-body">
 										<ul class="list-unstyled">
@@ -203,7 +204,7 @@
 								</div>
 							</div>
 
-                            <div id="news-digest" class="row ">
+							<div id="news-digest" class="row ">
 
 								<div class="col-sm-4 col-xs-12">
 									<div class="panel itemlist bullets">
@@ -316,9 +317,9 @@
 								</div>
 
 							</div>
-                        </section>
-                        <aside id="sidebar" class="col-xs-12 col-md-4">
-                            <div id="latest" class="row ">
+						</section>
+						<aside id="sidebar" class="col-xs-12 col-md-4">
+							<div id="latest" class="row ">
 								<div class="col-xs-12">
 									<div class="panel itemlist thumb tabs">
 										<div class="panel-title">
@@ -562,13 +563,12 @@
 									</div>
 								</div>
 							</div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer">
-
+						</aside>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
 			<div id="nav-footer" class="wrapper">
 				<div class="container">
 					<div class="row">
@@ -635,21 +635,21 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div id="copyright" class="wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="inner">
-							&copy; 2015 SAHAR Universal Network. All Rights Reserved.
+			<div id="copyright" class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="inner">
+								&copy; 2015 SAHAR Universal Network. All Rights Reserved.
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-
-	</footer>  
-</body>
+		</footer>  
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
 </html>

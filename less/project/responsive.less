@@ -135,6 +135,7 @@
     #masthead {
 	.container { padding-right: 60px; position: relative; }
 	#menu-toggle { position: absolute; top: 34px; right: -40px; background: transparent; }
+	#search-toggle { position: absolute; top: 34px; right: 40px; background: transparent; }
 	ul {
 	    li {
 		/*&:last-child { float: none; margin-top: 10px; }*/
@@ -173,6 +174,27 @@
     }
     #sharings-footer {
 	li { margin-bottom: 16px; }
+    }
+    body.search-open {
+	overflow: hidden;
+	&:after {
+	    position: absolute; width: 100%; min-height: 100vh; position: fixed; content: ''; display: block; background: #000; background: rgba(0, 0, 0, 0.8); bottom: 0; top: 0; left: 0;outline: 0; right: 0; z-index: 900; transition: all 0.3s;
+	}
+	#masthead {
+	    ul {
+		li:last-child {
+		    display: block !important;
+		    .search {
+			position: fixed; width: 50%; height: 40px; bottom: 70%; top: 30%; margin-top: -20px; right: 50%; left: 50%; margin-left: -25%; z-index: 950; transition: all 0.3s;
+			form {
+			    .form-control { width: 100%; height: 40px; line-height: 40px; background: #fff; color: @text-color; transition: all 0.4s; }
+			    button { top: 0 !important; right: 0 !important; width: 40px !important; height: 40px !important; line-height: 40px !important; display: block; transition: all 0.3s; }
+			    #close-search { transition: all 0.4s; display: block !important; position: fixed; top: 0; right: 0; width: 60px; height: 60px; background: black; z-index: 980; cursor: pointer; text-align: center; line-height: 60px; font-size: 32px; }
+			}
+		    }
+		}
+	    }
+	}
     }
 }
 // XS

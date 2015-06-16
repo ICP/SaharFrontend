@@ -16,7 +16,7 @@
 								<a href="http://azeri.sahartv.ir">SAHAR</a>
 							</h1>
 						</div>
-						<div class="col-xs-8 col-sm-9 col-md-10">
+						<div class="col-xs-12 col-sm-12 col-md-10 mastmenu">
 							<div class="pull-right">
 								<ul class="list-unstyled list-inline">
 									<li><a href="http://azeri.sahartv.ir/tv/live" class="btn btn-danger btn-xs">Canlı Yayım <i class="icon-tv"></i></a></li>

@@ -17,6 +17,16 @@
 							</div>
 						</div>
 					</li>
+					<li class="item">
+						<div class="inner">
+							<div class="img">
+								<img src="data/smpl11.jpg" alt="" />
+							</div>
+							<div class="title">
+								<h2>Description</h2>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>

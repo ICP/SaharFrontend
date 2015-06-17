@@ -52,7 +52,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-4 col-xs-push-1">
+				<div class="col-md-4 col-md-push-1 col-xs-12">
 					<div id="sharings-footer">
 						<ul class="list-unstyled list-inline pull-right">
 							<li><a href="#"><i class="icon-facebook"></i></a></li>

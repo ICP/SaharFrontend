@@ -16,7 +16,7 @@
     .panel-title { /* TODO - Deprecated: should use .title-border */
         position: relative; background: #fff; margin-bottom: 12px; font-family: Arial; font-weight: bold; overflow: hidden; width: 100%;
         &:after { content: ""; display: block; position: absolute; height: 1px; background: #e4e4e4; top: 16px; left: 0; width: 100%; }
-        span { display: inline-block; color: #a61b21; font-weight: bold; font-size: 18px; line-height: 20px; background: #fff; position: relative; z-index: 12; margin-left: 10px; padding: 0 7px }
+        span { display: inline-block; color: @title-color; font-weight: bold; font-size: 18px; line-height: 20px; background: #fff; position: relative; z-index: 12; margin-left: 10px; padding: 0 7px }
         &.title-2 {
             span{font-size: 18px;}
         }
@@ -29,7 +29,7 @@
         .panel-title {
             position: relative; background: #fff; margin-bottom: 12px; font-family: Arial; font-weight: bold;
             &:after { content: ""; display: block !important; position: absolute; height: 3px; background: #303030; top: 8px; left: 0; width: 100%; }
-            span { display: inline-block; color: #a61b21; font-weight: bold; font-size: 20px; line-height: 20px; /*text-transform: uppercase;*/ background: #fff; position: relative; z-index: 12; margin-left: 15px; padding: 0 7px }
+            span { display: inline-block; color: @title-color; font-weight: bold; font-size: 20px; line-height: 20px; /*text-transform: uppercase;*/ background: #fff; position: relative; z-index: 12; margin-left: 15px; padding: 0 7px }
         }
         &.title-border-top {
             margin-top: 10px;
@@ -109,7 +109,7 @@
                     }
                     span { color: #b2b2b2; }
                     &.active {
-                        span { color: #a61b21; }
+                        span { color: @title-color; }
                     }
                     & ~ li {
                         span { margin-left: 0; }
@@ -118,7 +118,7 @@
             }
         }
         &.schedule-page {
-            .btn.btn-danger { border-radius: 0; background: #a61b21; }
+            .btn.btn-danger { border-radius: 0; background: @title-color; }
             .big-title { font-family: Arial; font-weight: bold; /*text-transform: uppercase;*/ margin-top: 40px; }
         }
         &.title-tabs {
@@ -134,7 +134,7 @@
                     & ~ li { border-left: 1px solid #fff; }
                 }
                 li.active {
-                    & span { background: @patternBg repeat 0 0 #a61b21; color: #fff; }
+                    & span { background: @patternBg repeat 0 0 @title-color; color: #fff; }
                 }
             }
             .sub-tabs {
@@ -142,7 +142,7 @@
                     min-height: 0; line-height: 24px; height: 24px; text-align: center; font-family: Arial; font-weight: bold; padding: 0;
                     a { display: inline-block; background: #b2b2b2; color: #fff; width: 83px; }
                     &.active {
-                        a { background: #a61b21; }
+                        a { background: @title-color; }
                     }
                     & + li { margin: 0 6px 0 7px; }
                     & + li + li { margin: 0 }
@@ -188,7 +188,7 @@
         padding: 0 2px;
         a {
             display: inline-block; width: 36px; height: 36px; background: #3b3b3b; border-radius: 18px; line-height: 36px; text-align: center; color: #fff; font-size: 20px; transition: all 0.3s;
-            &:hover { background: #a61b21; text-decoration: none; }
+            &:hover { background: @title-color; text-decoration: none; }
         }
     }
 }
@@ -223,7 +223,7 @@
 .carousel-control {
     a {
         display: inline-block; width: 36px; height: 36px; background: #b2b2b2; position: relative; z-index: 42; color: #fff; text-decoration: none; font-size: 18px; line-height: 36px; text-align: center;
-        &:hover { background: #a61b21; }
+        &:hover { background: @title-color; }
     }
 }
 /** Carousels [sliders] **/
@@ -270,7 +270,7 @@
             margin-bottom: 14px; min-height: 50px;
             a { 
                 font-size: 14px; display: block; color: #333; position: relative; font-family: Arial;
-                &:hover { text-decoration: none; color: #a61b21; }
+                &:hover { text-decoration: none; color: @title-color; }
                 .title { display: block; line-height: 1.2em; }
             }
             &.featured { 
@@ -416,7 +416,7 @@
 	font-size: 12px; margin-top: 16px;
 	a { 
 	    color: #333;
-	    &:hover { color: #a61b21; }
+	    &:hover { color: @title-color; }
 	    &:after { display: none; }
 	}
     }
@@ -471,7 +471,7 @@
     .program-desc {
         position: absolute; bottom: 20px; left: 0; margin: 0 120px 0px 20px; cursor: pointer;
         h2 {
-            margin: 0; background: #a61b21; padding: 5px 10px; font-family: Arial; font-weight: bold; /*height: 44px;*/ overflow: hidden;
+            margin: 0; background: @title-color; padding: 5px 10px; font-family: Arial; font-weight: bold; /*height: 44px;*/ overflow: hidden;
             &.has-data {
                 /*height: 58px;*/ overflow: visible;
                 & + p { /*margin-top: 58px;*/ }
@@ -479,7 +479,7 @@
             small { display: block; color: #fff; font-size: 14px; }
             a { color: #fff; text-shadow: 3px 3px 1px #000; text-decoration: none; }
         }
-        p { display: block; margin: 0; background: #fff; color: #a61b21; font-family: Arial; font-weight: bold; font-size: 18px; /*margin-top: 44px;*/  padding: 5px 10px; }
+        p { display: block; margin: 0; background: #fff; color: @title-color; font-family: Arial; font-weight: bold; font-size: 18px; /*margin-top: 44px;*/  padding: 5px 10px; }
     }
 }
 .panel.slider {
@@ -531,7 +531,7 @@
                     &:hover { color: #fff; }
                 }
                 &.active {
-                    color: #fff; width: 160px; border-right: 1px solid #fff; background: @patternBg repeat 0 0 #a61b21;
+                    color: #fff; width: 160px; border-right: 1px solid #fff; background: @patternBg repeat 0 0 @title-color;
                     a { position: relative; border-top: 1px solid #fff; top: -1px; color: #fff; padding-right: 10px; text-align: right; }
                 }
             }
@@ -597,8 +597,8 @@
             h2 {
                 font-family: Arial; font-weight: bold; font-size: 28px;
                 a {
-                    color: #a61b21;
-                    &:hover { color: darken(#a61b21, 10%); text-decoration: none; }
+                    color: @title-color;
+                    &:hover { color: darken(@title-color, 10%); text-decoration: none; }
                 }
             }
             .inner { height: 432px; }
@@ -631,12 +631,12 @@
 .panel.schedules {
     .table {
 	a {
-	    color: #a61b21; transition: all 0.25s;
+	    color: @title-color; transition: all 0.25s;
 	    &:hover {
-		color: darken(#a61b21, 10%); text-decoration: none;
+		color: darken(@title-color, 10%); text-decoration: none;
 	    }
 	}
-        th { border-bottom: 3px solid #3b3b3b; font-size: 12px; font-weight: bold; color: #a61b21; }
+        th { border-bottom: 3px solid #3b3b3b; font-size: 12px; font-weight: bold; color: @title-color; }
         tbody {
             tr {
                 background: #f7f7f7; border-bottom: 2px solid #fff;
@@ -657,9 +657,9 @@
             tr {
                 height: 80px;  border: 0 none;
                 &.active {
-                    background: #a61b21;
+                    background: @title-color;
                     td.program {
-                        background: #a61b21;
+                        background: @title-color;
                         h3 { color: #fff; }
                         p { color: #e3dcc8; }
                     }
@@ -692,7 +692,7 @@
         margin-bottom: 0;
         li { margin-bottom: 20px; }
     }
-    .episode { color: #a61b21; font-family: Arial; font-weight: bold; /*text-transform: uppercase;*/ font-size: 18px; line-height: 20px; }
+    .episode { color: @title-color; font-family: Arial; font-weight: bold; /*text-transform: uppercase;*/ font-size: 18px; line-height: 20px; }
     .img {
         /*float: left; .img { width: auto !important; }*/
     }
@@ -716,7 +716,7 @@
 .panel.tiles {
     .panel-title {
         &:after { display: none; }
-        h3 {font-weight: bold; margin-top: 35px; font-family: "Hispan",Arial; /*text-transform: uppercase;*/ color: #a61b21;}
+        h3 {font-weight: bold; margin-top: 35px; font-family: "Hispan",Arial; /*text-transform: uppercase;*/ color: @title-color;}
     }
     .tile {
         position: relative; margin-bottom: 20px; max-height: 212px; overflow: hidden;
@@ -768,7 +768,7 @@
 	    &:hover { background: #f7f7f7; }
 	    a {
 		color: @text-color; margin-bottom: 8px; transition: all 0.25s;
-		&:hover { text-decoration: none; color: #a61b21; }
+		&:hover { text-decoration: none; color: @title-color; }
 		span {
 		    display: block; line-height: 40px;
 		    &.img { min-height: 0; width: 40px; height: 40px; float: left; font-size: 22px; padding-left: 8px; }
@@ -777,9 +777,9 @@
 	    }
 	    .progress {
 		height: 3px;
-		background: #EFD7D7;
+		background: @progress-background-color;
 		.seek {
-		    background: #C9302C;
+		    background: @progress-foreground-color;
 		    height: 100%;
 		}
 	    }
@@ -862,7 +862,7 @@
                 }
                 &:after { content: ''; position: absolute; width: 10px; height: 10px; top: 6px; left: 0; background: #b2b2b2; }
                 &:hover, &.active {
-                    &::after { background: #a61b21; }
+                    &::after { background: @title-color; }
                 }
                 .date {
                     color: #b2b2b2; font-weight: bold;
@@ -886,13 +886,13 @@
 		.inner {
 		    a {
 			&:hover {
-			    span.title { color: #a61b21;  }
+			    span.title { color: @title-color;  }
 			}
 			span {
 			    &.title {
 				position: static; color: #333; padding: 0 0 10px 0;
 				&:after { background: none transparent; }
-				&:hover { color: #a61b21; }
+				&:hover { color: @title-color; }
 			    }
 			}
 		    }
@@ -919,7 +919,7 @@
         }
     }
 }
-#utility .more { font-size: 12px; font-weight: bold; color: #a61b21; }
+#utility .more { font-size: 12px; font-weight: bold; color: @title-color; }
 .items-filter, .items-tags {
     li {
         text-transform: uppercase;font-family: Arial; font-weight: bold;
@@ -928,7 +928,7 @@
         }
         &.active, &:hover {
             a {
-                background: #a61b21;
+                background: @title-color;
             }
         }
     }

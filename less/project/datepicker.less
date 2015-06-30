@@ -14,7 +14,7 @@
     margin-bottom: 20px;
      box-shadow: 2px 2px 3px #b1b1b1;
     &-inline {
-        width: 100%; border: 1px solid #a61b21;
+        width: 100%; border: 1px solid @title-color;
     }
     direction: ltr;
     &&-rtl {
@@ -85,7 +85,7 @@
         width: 100%;
        
         thead {
-            tr + tr { background: #a61b21; color: #fff; }
+            tr + tr { background: @title-color; color: #fff; }
         }
         tr {
             td, th {
@@ -112,12 +112,12 @@
         }
         &.old,
         &.new {
-            color: #a61b21;
+            color: @title-color;
         }
         &.disabled,
         &.disabled:hover {
             background: none;
-            color: #a61b21;
+            color: @title-color;
             cursor: default;
         }
         &.today,
@@ -160,7 +160,7 @@
         &.active:hover,
             &.active.disabled,
             &.active.disabled:hover {
-            .button-variant(@btn-primary-color, #a61b21, #a61b21);
+            .button-variant(@btn-primary-color, @title-color, @title-color);
             text-shadow: 0 -1px 0 rgba(0,0,0,.25);
         }
         span {
@@ -178,19 +178,19 @@
             &.disabled,
             &.disabled:hover {
                 background: none;
-                color: #a61b21;
+                color: @title-color;
                 cursor: default;
             }
             &.active,
             &.active:hover,
                 &.active.disabled,
                 &.active.disabled:hover {
-                .button-variant(@btn-primary-color, #a61b21, #a61b21);
+                .button-variant(@btn-primary-color, @title-color, @title-color);
                 text-shadow: 0 -1px 0 rgba(0,0,0,.25);
             }
             &.old,
             &.new {
-                color: #a61b21;
+                color: @title-color;
             }
         }
     }

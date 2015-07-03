@@ -103,7 +103,6 @@
 				</div>
 			</div>  
 		</header><!-- ./header -->
-
 		<section id="main">
 			<div class="wrapper">
 				<div class="container">
@@ -203,9 +202,7 @@
 									</div>
 								</div>
 							</div>
-
 							<div id="news-digest" class="row ">
-
 								<div class="col-sm-4 col-xs-12">
 									<div class="panel itemlist bullets">
 										<div class="panel-title">
@@ -315,7 +312,83 @@
 
 									</div>
 								</div>
-
+							</div>
+							<div class="row hidden-sm hidden-xs" id="media">
+								<div class="col-xs-12">
+									<div class="panel itemlist slider title-outside">
+										<div class="panel-title">
+											<a href="/fotos"><span>FOTOS</span></a>
+										</div>
+										<div class="panel-body">
+											<div class="carousel-control">
+												<a class="prev" href="#"><i class="icon-left"></i></a>
+												<a class="next" href="#"><i class="icon-right"></i></a>
+											</div>
+											<ul class="list-unstyled">
+												<li class="item">
+													<div class="inner">
+														<a href="#">
+															<span class="img">
+																<img alt="" src="http://217.218.67.243/images/thumbnail/20150703/06512215_m.jpg" />
+															</span>
+															<span class="title">Campaña a favor del NO en Grecia</span>
+														</a>
+													</div>
+												</li>
+												<li class="item">
+													<div class="inner">
+														<a href="#">
+															<span class="img">
+																<img alt="" src="http://217.218.67.243/images/thumbnail/20150703/06512215_m.jpg" />
+															</span>
+															<span class="title">Campaña a favor del NO en Grecia</span>
+														</a>
+													</div>
+												</li>
+												<li class="item">
+													<div class="inner">
+														<a href="#">
+															<span class="img">
+																<img alt="" src="http://217.218.67.243/images/thumbnail/20150703/06512215_m.jpg" />
+															</span>
+															<span class="title">Campaña a favor del NO en Grecia</span>
+														</a>
+													</div>
+												</li>
+												<li class="item">
+													<div class="inner">
+														<a href="#">
+															<span class="img">
+																<img alt="" src="http://217.218.67.243/images/thumbnail/20150703/06512215_m.jpg" />
+															</span>
+															<span class="title">Campaña a favor del NO en Grecia</span>
+														</a>
+													</div>
+												</li>
+												<li class="item">
+													<div class="inner">
+														<a href="#">
+															<span class="img">
+																<img alt="" src="http://217.218.67.243/images/thumbnail/20150703/06512215_m.jpg" />
+															</span>
+															<span class="title">Campaña a favor del NO en Grecia</span>
+														</a>
+													</div>
+												</li>
+												<li class="item">
+													<div class="inner">
+														<a href="#">
+															<span class="img">
+																<img alt="" src="http://217.218.67.243/images/thumbnail/20150703/06512215_m.jpg" />
+															</span>
+															<span class="title">Campaña a favor del NO en Grecia</span>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</section>
 						<aside id="sidebar" class="col-xs-12 col-md-4">

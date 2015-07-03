@@ -73,11 +73,11 @@
 										<a href="http://azeri.sahartv.ir/news/dünya">Dünya</a>
 
 									</li>
-									<li class="haschild">
+									<li class="haschild single-col">
 										<a href="http://azeri.sahartv.ir/news/videolar">Videolar</a>
 										<div class="child">
 											<div class="row">
-												<div class="col-md-5 ">
+												<div class="col-md-12">
 													<ul class="list-unstyled">
 
 														<li>

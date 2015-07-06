@@ -102,9 +102,9 @@
                 &:after { font-family: "irib-icons"; position: absolute; width: 40px; height: 40px; left: 50%; top: 50%; margin: -35px 0 0 -20px; background: #000; background: rgba(0, 0, 0, 0.5); border-radius: 20px; border: 2px solid #fff; box-shadow: 0 0 5px #333; font-size: 18px; text-align: center; line-height: 36px; color: rgba(255, 255, 255, 0.8); text-indent: 3px; }
             }
         }
-	&.video { a:after { content: '\e80a'; } }
-	&.audio { a:after { content: '\e84f'; } }
-	&.gallery { a:after { content: '\e844'; } }
+	&.video { .img:after { content: '\e80a'; } }
+	&.audio { .img:after { content: '\e84f'; } }
+	&.gallery { .img:after { content: '\e844'; } }
     }
     &.tabs {
         .panel-title {
@@ -385,7 +385,7 @@
 	display: block; position: relative; width: 100%; overflow: hidden;
     }
     &.video, &.audio, &.gallery {
-	a {
+	.img {
 	    &:after { content: '\e80a'; font-family: "irib-icons"; position: absolute; width: 40px; height: 40px; left: 50%; top: 50%; margin: -20px 0 0 -20px; background: #000; background: rgba(0, 0, 0, 0.5); border-radius: 20px; border: 2px solid #fff; box-shadow: 0 0 5px #333; font-size: 18px; text-align: center; line-height: 36px; color: rgba(255, 255, 255, 0.8); text-indent: 0; z-index: 100; }
 	}
     }
@@ -433,19 +433,19 @@
 	}
     }
     &.video { 
-	a:after { content: '\e80a'; display: block; }
+	.img:after { content: '\e80a'; display: block; }
 	&.medium {
 	    .img > a:after { content: '\e80a'; }
 	}
     }
     &.audio {
-	a:after { content: '\e84f'; display: block; }
+	.img:after { content: '\e84f'; display: block; }
 	&.medium {
 	    .img > a:after { content: '\e84f'; }
 	}
     }
     &.gallery {
-	a:after { content: '\e844'; display: block; }
+	.img:after { content: '\e844'; display: block; }
 	&.medium {
 	    .img > a:after { content: '\e844'; }
 	}
@@ -773,18 +773,25 @@
         }
     }
     &.title-outside {
-	.tile {
-	    .inner:after { display: none; }
-	    .desc {
-		position: static; margin: 6px 0 0 0;
-		h4 {
-		    a {
-			color: @text-color;
-			&:hover { color: #a61b21; text-decoration: none; }
-		    }
-		}
-	    }
-	}
+    	.tile {
+    	    .inner{
+                text-decoration: none;
+                &:after {display: none; }
+        	    .desc {
+            		position: static; margin: 6px 0 0 0;
+            		h4 {
+            			color: @text-color;
+            	    }
+            	}
+                &:hover {
+                    .desc {
+                        h4{
+                            color: #a61b21;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .panel.poll {

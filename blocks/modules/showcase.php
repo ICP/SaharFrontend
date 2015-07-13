@@ -24,40 +24,40 @@
 				<div class="row">
 					<ul class="list-unstyled">
 						<li class="tile col-xs-12 col-sm-4">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="tile col-xs-12 col-sm-4">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="tile col-xs-12 col-sm-4">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -68,52 +68,52 @@
 				<div class="row">
 					<ul class="list-unstyled">
 						<li class="tile col-xs-12 col-sm-3">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="tile col-xs-12 col-sm-3">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="tile col-xs-12 col-sm-3">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="tile col-xs-12 col-sm-3">
-							<div class="inner">
+							<a class="inner" href="#">
 								<div class="img video">
-									<a href="#">
+									<span>
 										<img src="data/smpl8.jpg" alt="" />
-									</a>
+									</span>
 								</div>
 								<div class="desc">
-									<h4><a href="#">Cine a Contra Corriente</a></h4>
+									<h4>Cine a Contra Corriente</h4>
 								</div>
-							</div>
+							</a>
 						</li>
 					</ul>
 				</div>

@@ -99,6 +99,14 @@ body.rtl {
 	    label { padding-left: 0; padding-right: 20px; }
 	    input { margin-left: 0; margin-right: -20px; }
 	}
+	&.slideshow {
+	    .carousel-control {
+		a {
+		    width: 36px !important;
+		    &.prev { float: left; }
+		}
+	    }
+	}
     }
     .itemlist {
 	ul {
@@ -110,7 +118,31 @@ body.rtl {
 	    }
 	}
     }
+    
+    /*! Footer */
     #footer {
 	.pull-right { float: left !important; }
+    }
+    
+    /*! Item */
+    #item {
+	.page-header {
+	    a { display: inline; }
+	}
+	.item-author {
+	    a { display: inline; }
+	}
+	.item-text {
+	    blockquote {
+		float: left; margin-right: 0; margin-left: -270px;
+	    }
+	}
+	.item-related {
+	    .tile {
+		.inner {
+		    &:after { display: none; }
+		}
+	    }
+	}
     }
 }

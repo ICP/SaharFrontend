@@ -68,6 +68,18 @@ body.rtl {
 		    .title { margin-right: 0 !important; }
 		}
 	    }
+	    &.thumb {
+		.title { margin-left: 0 !important; }
+		&.thumbs-large {
+		    li {
+			&.featured {
+			    .desc {  margin-right: 430px; }
+			}
+			.img { float: right; margin-right: 0; margin-left: 20px; }
+			.desc { margin-left: 0 !important; margin-right: 220px; }
+		    }
+		}
+	    }
 	}
 	&.media {
 	    .titles {
@@ -108,6 +120,8 @@ body.rtl {
 	    }
 	}
     }
+    
+    /*! Individual itemlist modules */
     .itemlist {
 	ul {
 	    li {
@@ -118,12 +132,12 @@ body.rtl {
 	    }
 	}
     }
-    
+
     /*! Footer */
     #footer {
 	.pull-right { float: left !important; }
     }
-    
+
     /*! Item */
     #item {
 	.page-header {

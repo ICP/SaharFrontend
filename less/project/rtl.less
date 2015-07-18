@@ -61,7 +61,13 @@ body.rtl {
 	    }
 	}
 	&.itemlist {
-
+	    &.bullets {
+		li {
+		    background-position: right 5px; padding-left: 0; padding-right: 14px;
+		    &.featured { padding: 0; }
+		    .title { margin-right: 0 !important; }
+		}
+	    }
 	}
 	&.media {
 	    .titles {
@@ -89,6 +95,10 @@ body.rtl {
 		}
 	    }
 	}
+	&.poll {
+	    label { padding-left: 0; padding-right: 20px; }
+	    input { margin-left: 0; margin-right: -20px; }
+	}
     }
     .itemlist {
 	ul {
@@ -100,5 +110,7 @@ body.rtl {
 	    }
 	}
     }
-
+    #footer {
+	.pull-right { float: left !important; }
+    }
 }

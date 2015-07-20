@@ -78,11 +78,11 @@
             }
 	    a {
 		&:hover {
-		    text-decoration: none; color: #a61b21;
+		    text-decoration: none; color: @title-color;
 		    span {
-			text-decoration: none; color: #a61b21;
+			text-decoration: none; color: @title-color;
 		    }
-		}
+		  }
 	    }
         }
     }
@@ -773,20 +773,7 @@
         }
     }
     &.title-outside {
-<<<<<<< HEAD
-	.tile {
-	    .inner:after { display: none; }
-	    .desc {
-		position: static; margin: 6px 0 0 0;
-		h4 {
-		    a {
-			color: @text-color;
-			&:hover { color: @title-color; text-decoration: none; }
-		    }
-		}
-	    }
-	}
-=======
+
     	.tile {
     	    .inner{
                 text-decoration: none;
@@ -800,13 +787,12 @@
                 &:hover {
                     .desc {
                         h4{
-                            color: #a61b21;
+                            color: @title-color;
                         }
                     }
                 }
             }
         }
->>>>>>> 334ff252e7dc0ebeba636265820b9d0d9b20ea5b
     }
 }
 .panel.poll {
@@ -938,7 +924,7 @@
 }
 /** Dirty codes **/
 #news-digest {
-    & > .col-sm-4 {
+    & > .col-sm-4, & > .col-sm-3 {
 	li {
 	    &.featured {
 		.inner {

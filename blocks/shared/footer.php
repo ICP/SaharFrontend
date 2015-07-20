@@ -2,7 +2,7 @@
 	<div id="nav-footer" class="wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-md-8">
 					<div id="sitemap">
 						<div class="row sitemap-titles">
 							<div class="col-xs-6"><span class="header">Noticias</span></div>

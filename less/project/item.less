@@ -6,7 +6,7 @@
     }
 }
 #item {
-    h1, h2, h3, h4, h5 { font-family: Arial; }
+    h1, h2, h3, h4, h5 { font-family: @font-family; }
     h3 { font-weight: bold; margin-top: 35px; }
     .panel {
         .panel-title {
@@ -31,7 +31,7 @@
     }
     .page-header {
         h3 {
-            font-family: Arial !important; font-size: 14px; color: #333; margin-bottom: 0;
+            font-family: @font-family !important; font-size: 14px; color: #333; margin-bottom: 0;
             a {
                 color: @title-color;
                 &:hover { text-decoration: none; color: darken(@title-color, 10%); }
@@ -45,8 +45,8 @@
         h3, h4 { font-weight: bold; }
         h4 { font-size: 22px; margin-top: 40px; }
         blockquote {
-            border-left: 0 none;float: right;margin-bottom: 0;margin-right: -290px;padding: 10px;position: relative;text-align: left;width: 270px; background: #b2b2b2; font-family: Arial; color: #fff; font-weight: bold; line-height: 1.4; margin-top: 150px; clear: right;
-            &:before { color: #c7c7c7;content: "“";float: left;font-family: arial;font-size: 200px;line-height: 60px;margin-bottom: -50px;padding-top: 55px; }
+            border-left: 0 none;float: right;margin-bottom: 0;margin-right: -290px;padding: 10px;position: relative;text-align: left;width: 270px; background: #b2b2b2; font-family: @font-family; color: #fff; font-weight: bold; line-height: 1.4; margin-top: 150px; clear: right;
+            &:before { color: #c7c7c7;content: "“";float: left;font-family: @font-family;font-size: 200px;line-height: 60px;margin-bottom: -50px;padding-top: 55px; }
         }
     }
     .item-sharings {
@@ -92,7 +92,7 @@
     .nav-tabs{
         & > li {
             & > a {
-                color: #333; border-radius:  0; font-size: 13px; font-family: Arial;
+                color: #333; border-radius:  0; font-size: 13px; font-family: @font-family;
             }
         }
     }
@@ -130,7 +130,7 @@
         .item {
             padding-top: 10px; padding-bottom: 40px; border-bottom: 1px solid #b2b2b2;
 
-            .item-date { /*text-transform: uppercase;*/ color: #b2b2b2; font-size: 14px; font-family: Arial; font-weight: bold; }
+            .item-date { /*text-transform: uppercase;*/ color: #b2b2b2; font-size: 14px; font-family: @font-family; font-weight: bold; }
         }
         &:last-child {
             .item {
@@ -155,7 +155,7 @@
             .item-text { margin-top: 5px; }
         }
         h3 {
-            font-family: Arial; font-weight: bold; margin-top: 10px; font-size: 20px;
+            font-family: @font-family; font-weight: bold; margin-top: 10px; font-size: 20px;
             a {
                 color: #333;
                 &:hover { text-decoration: none; color: @title-color; }

@@ -14,12 +14,13 @@ body.rtl {
 	    ul {
 		li { 
 		    & ~ li { border-left: 0 none; border-right: 2px solid #b2b2b2; }
-		    &:last-child { border: 0 none; }
+		    &:last-child { border: 0 none; float: left; }
 		    .search {
-			button { right: auto; left: 2px; }
+			button { right: auto !important; left: 2px !important; }
 		    }
 		}
 	    }
+	    #menu-toggle, #search-toggle { right: auto; left: 0; }
 	}
 	#menu {
 	    & > ul {
